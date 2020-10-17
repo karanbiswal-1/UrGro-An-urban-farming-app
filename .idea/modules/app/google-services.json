@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "671113437363",
+    "firebase_url": "https://urgro-db996.firebaseio.com",
+    "project_id": "urgro-db996",
+    "storage_bucket": "urgro-db996.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671113437363:android:7d42a4e36ac88ca8f450c6",
+        "android_client_info": {
+          "package_name": "com.example.urgro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671113437363-4jkfpc9rego3kp8cd3c5kpdvepbhfhr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.urgro",
+            "certificate_hash": "cc25747e626d98ca566c516a69a87f106674fed2"
+          }
+        },
+        {
+          "client_id": "671113437363-q0q3sanj4d03iffl99g54b521521028l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEpw_9nBMrKBgkr4tSb9q-2kYJRDpReeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671113437363-q0q3sanj4d03iffl99g54b521521028l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
