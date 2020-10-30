@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".happyfarming">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAPPY\nFARMING"
+        android:layout_marginTop="140dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="#50832C"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/happyfarming"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:background="@drawable/fp_buttun_bg"
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_getstarted"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

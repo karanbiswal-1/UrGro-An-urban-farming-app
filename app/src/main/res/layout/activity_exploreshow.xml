@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".exploreshow">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPLORE"
+        android:textSize="30dp"
+        android:id="@+id/tv_explore_show"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="#ECE9E9"
+        android:shadowRadius="1"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLACES"
+        android:layout_below="@id/tv_explore_show"
+        android:id="@+id/tv_places_show"
+        android:layout_marginLeft="30dp"
+        android:textSize="40dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/exploring2"
+        android:layout_below="@id/tv_places_show"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rounded_arrow"
+        android:id="@+id/btn_run_explore"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:tint="@android:color/white"
+        android:backgroundTint="#4E525B"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="100dp"
+        app:fabCustomSize="70dp"/>
+
+
+
+</RelativeLayout>

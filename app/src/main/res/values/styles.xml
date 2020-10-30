@@ -6,5 +6,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="AppTheme.NavigationView">
+        <item name="android:textColorSecondary">#EAE8E8</item>
+    </style>
 
 </resources>

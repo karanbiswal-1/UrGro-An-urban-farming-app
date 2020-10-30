@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/rl_profile_ui"
+        android:background="@drawable/profile_bg_new_cropped"
+        >
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="10dp"
+           android:id="@+id/iv_edit_profile"
+           android:src="@drawable/editv4"
+           android:layout_alignParentRight="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="22dp"
+        android:src="@drawable/prof3"
+        android:id="@+id/iv_profile_Pic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karan Biswal"
+        android:textColor="#FFF"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:textSize="26sp"
+        android:id="@+id/tv_profile_name"
+        android:fontFamily="@font/josefin_sans_semibold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_prof_des"
+            android:textColor="#D8D6D6"
+            android:text="rasulgarh"
+            android:layout_below="@id/tv_profile_name"
+            android:fontFamily="@font/lato"
+            android:textSize="16sp"
+            android:layout_marginLeft="35dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rl_account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_profile_icon_acount"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:layout_toRightOf="@id/iv_profile_icon_acount"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/josefin_sans_bold"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chevron"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/rl_account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/rl_myads">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/megaphone"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_profile_icon_myads"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Ads"
+                android:layout_toRightOf="@id/iv_profile_icon_myads"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/josefin_sans_bold"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chevron"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/rl_myads"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/help">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/technicalsupport"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_profile_icon_help"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_support"
+                android:layout_toRightOf="@id/iv_profile_icon_help"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/josefin_sans_bold"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chevron"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

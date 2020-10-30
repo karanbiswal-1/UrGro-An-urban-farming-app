@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adapter.previewPost">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_back_normal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ic_back_normal"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_back_normal"
+        android:id="@+id/cv_previewIMG"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/iv_previewimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:id="@+id/tv_des_preview"
+        android:layout_below="@id/cv_previewIMG"
+        android:text="suitable for vegetable farming such as carrot an dtomato."
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ll_location"
+        android:layout_below="@id/tv_des_preview"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Location :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/tv_location_preview"
+            android:padding="5dp"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/standard_bg"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ll_area"
+        android:layout_below="@id/ll_location"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area(sqm) :"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:id="@+id/tv_area_preview"
+            android:padding="5dp"
+            android:fontFamily="@font/lato"
+            android:background="@drawable/standard_bg"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ll_rentPrice"
+        android:layout_below="@id/ll_area"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent Price :"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/josefin_sans_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:id="@+id/tv_rent_preview"
+            android:fontFamily="@font/lato"
+            android:padding="5dp"
+            android:background="@drawable/standard_bg"/>
+
+
+    </LinearLayout>
+
+     <Button
+         android:layout_width="130dp"
+         android:layout_height="50dp"
+         android:background="@drawable/fp_buttun_bg"
+         android:layout_marginBottom="20dp"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/btn_chat_preview"
+         android:text="chat"
+         android:textSize="18sp"
+         android:textColor="#ffffff"
+         android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>

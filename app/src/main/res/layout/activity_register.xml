@@ -1,44 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/background_signup"
     tools:context=".registerActivity">
 
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/ic_back_white"
+        app:srcCompat="@drawable/ic_back_white"
+        android:layout_margin="20dp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Create\nAccount"
+       android:id="@+id/tv_create_account"
+       android:textSize="30sp"
+       android:textColor="#ffffff"
+       android:textStyle="bold"
+       android:layout_marginTop="150dp"
+       android:layout_marginLeft="30dp"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="200dp"
-        android:id="@+id/et_name"
-        android:hint="enter your name"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_below="@id/tv_create_account"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/et_reg_username"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Username"
+
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/et_email"
-        android:hint="enter your name"
-        android:layout_margin="10dp"
+        android:layout_below="@id/et_reg_username"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="20dp"
+        android:id="@+id/et_reg_name"
+        android:hint="Full Name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/et_password"
-        android:hint="enter your name"
-        android:layout_margin="10dp"
+        android:layout_below="@id/et_reg_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/et_reg_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+
         />
 
-    <Button
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_reg_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/et_reg_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="register"
-        android:layout_marginLeft="160dp"
-        android:id="@+id/btn_reg"/>
+        android:text="Sign In"
+        android:layout_below="@id/et_reg_password"
+        android:textColor="#ffffff"
+        android:layout_marginTop="70dp"
+        android:id="@+id/tv_text_log_singin"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rounded_arrow"
+        android:id="@+id/btn_reg"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_reg_password"
+        android:layout_marginTop="50dp"
+        android:tint="@android:color/white"
+        android:backgroundTint="#4E525B"
+        android:layout_marginRight="30dp"
+        app:fabCustomSize="70dp"/>
 
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:id="@+id/tv_reg_signin"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#888787"/>
+
+
+
+</RelativeLayout>

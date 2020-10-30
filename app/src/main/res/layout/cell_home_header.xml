@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@id/tv_des_home_header"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/lato"
+        android:text="Hi !"
+        android:textColor="#494848"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_username_home_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_hello"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:textColor="#555454"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username_home_header"
+        android:id="@+id/tv_des_home_header"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/lato"
+        android:layout_marginTop="5dp"
+        android:text="Lets plant something together . ."
+        android:textSize="14sp" />
+
+</RelativeLayout>

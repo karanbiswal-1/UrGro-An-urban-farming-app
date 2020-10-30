@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/ic_back_blue"
+            android:id="@+id/ic_editprofile_back"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/iv_editprofile_profimg"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_editprofile_change"
+           android:layout_below="@id/iv_editprofile_profimg"
+           android:layout_centerHorizontal="true"
+           android:text="change photo"
+           android:textColor="@color/colorPrimary"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginTop ="30dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginLeft="20dp"
+          android:fontFamily="@font/lato"
+          android:textColorHint="@color/colorPrimary"
+          android:background="@drawable/standard_bg"
+          android:padding="10dp"
+          android:layout_below="@id/tv_editprofile_change"
+          android:id="@+id/et_editprofile_username"
+          android:hint="Username"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/lato"
+           android:textColorHint="@color/colorPrimary"
+           android:id="@+id/et_editprofile_name"
+           android:background="@drawable/standard_bg"
+           android:padding="10dp"
+           android:layout_below="@id/et_editprofile_username"
+           android:hint="full name"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/lato"
+           android:textColorHint="@color/colorPrimary"
+           android:id="@+id/et_editprofile_phone"
+           android:layout_below="@id/et_editprofile_name"
+           android:background="@drawable/standard_bg"
+           android:padding="10dp"
+           android:hint="phone number"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:textColorHint="@color/colorPrimary"
+           android:id="@+id/et_editprofile_profession"
+           android:background="@drawable/standard_bg"
+           android:padding="10dp"
+           android:fontFamily="@font/lato"
+           android:layout_below="@id/et_editprofile_phone"
+           android:hint="profession"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/standard_bg"
+           android:fontFamily="@font/lato"
+           android:textColorHint="@color/colorPrimary"
+           android:padding="10dp"
+           android:id="@+id/et_editprofile_address"
+           android:layout_below="@id/et_editprofile_profession"
+           android:hint="address"/>
+
+       <Button
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:text="Update"
+           android:textColor="#FFF"
+           android:background="@drawable/fp_buttun_bg"
+           android:id="@+id/btn_save"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="20dp"/>
+
+
+   </RelativeLayout>
+
+
+
+
+</LinearLayout>

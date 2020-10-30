@@ -8,47 +8,24 @@
     tools:context=".MainActivity"
     android:background="@drawable/splach_bg">
 
-  <TextView
-      android:id="@+id/splash_title"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="100dp"
-      android:layout_marginTop="100dp"
-      android:fontFamily="sans-serif"
-      android:text="Ur"
-      android:textColor="#C9595959"
-      android:textSize="70sp" />
+ <ImageView
+     android:layout_width="230dp"
+     android:layout_height="180dp"
+     android:id="@+id/iv_apptitle"
+   android:src="@drawable/urgronew"
+     android:layout_marginTop="80dp"
+  android:layout_centerHorizontal="true"/>
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/splashGro"
-    android:text="Gro"
-    android:textColor="#D80C9C3D"
-    android:layout_marginTop="100dp"
-    android:textSize="70sp"
-      android:layout_toRightOf="@+id/splash_title" />
-
-
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="140dp"
-      android:layout_marginTop="190dp"
-      android:id="@+id/splash_tagline"
-      android:fontFamily="@font/open_sans_semibold"
-      android:text="An urban farming app"
-      android:textColor="#084A0A" />
 
 
 
   <ImageView
       android:layout_width="400dp"
       android:layout_height="400dp"
-
-    android:src="@drawable/splash_screen"
+      android:src="@drawable/splash_screen"
       android:layout_marginLeft="10dp"
-      android:layout_marginTop="300dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="50dp"
     android:id="@+id/splashImg"/>
 
 </RelativeLayout>

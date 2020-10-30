@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/standard_bg"
+    android:layout_margin="10dp"
+    android:layout_height="60dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/prof3"
+        android:id="@+id/iv_chatuser"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_charuser"
+        android:layout_toRightOf="@+id/iv_chatuser"
+        android:layout_centerVertical="true"
+        android:text="karan biswal"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

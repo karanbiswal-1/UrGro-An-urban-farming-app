@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rl_explorebar"
+        android:background="@drawable/explore_et_bg"
+        >
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/et_explore"
+      android:layout_marginRight="50dp"
+      android:layout_marginLeft="10dp"
+      android:background="#EFEDED"
+      android:layout_centerVertical="true"
+      android:hint="Search by Places"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/searchv3"
+        android:layout_marginRight="5dp"
+        android:id="@+id/iv_explore_search"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_explorebar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rcv_exploremain"/>
+
+
+</RelativeLayout>

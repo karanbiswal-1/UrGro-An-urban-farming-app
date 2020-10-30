@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/dl_dash"
+    tools:context=".dashBoard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <androidx.appcompat.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/tlb_dash"
+          android:minHeight="?attr/actionBarSize"
+          android:background="#ffffff">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:src="@drawable/menu_new_cropped"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/ic_ham"/>
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:cardCornerRadius="15dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:elevation="10dp">
+
+                  <ImageView
+                      android:id="@+id/prof_dash_img"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/prof3"
+                      android:scaleType="centerCrop"
+                      />
+              </androidx.cardview.widget.CardView>
+
+
+
+          </RelativeLayout>
+
+      </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/fl_fragment_container"/>
+
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            app:mbn_defaultIconColor="#5C5B5B"
+            app:mbn_selectedIconColor="#056B85"
+            android:id="@+id/btm_nav"
+         android:layout_alignParentBottom="true"
+
+          />
+
+
+
+    </RelativeLayout>
+
+  <com.google.android.material.navigation.NavigationView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+     app:headerLayout="@layout/nav_header"
+      android:id="@+id/navView"
+      app:menu="@menu/nev_bar_menu"
+      app:itemTextColor="#ffffff"
+      app:itemIconTint="#ffffff"
+      android:background="@drawable/nav_bg"
+      android:layout_gravity="start">
+
+  </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
